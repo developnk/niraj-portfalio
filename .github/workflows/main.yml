@@ -48,7 +48,7 @@ jobs:
             - name: Copy To Server
               uses: appleboy/scp-action@master
               with:
-                  host: ${{ vars.SANDBOX_SERVER_HOST_92 }}
+                  host: ${{ secrets.SANDBOX_SERVER_HOST }}
                   username: ${{ vars.SANDBOX_USER_92 }}
                   key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
                   source: '.'
@@ -58,7 +58,7 @@ jobs:
             - name: Run Scripts on server
               uses: appleboy/ssh-action@v1.0.0
               with:
-                  host: ${{ vars.SANDBOX_SERVER_HOST_92 }}
+                  host: ${{ secrets.SANDBOX_SERVER_HOST }}
                   username: ${{ vars.SANDBOX_USER_92 }}
                   key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
                   script: |
