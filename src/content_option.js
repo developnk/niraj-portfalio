@@ -2,7 +2,8 @@ import zamplia from '../src/assets/images/zamplia-social.jpg'
 import blog from '../src/assets/images/icashiq.webp'
 import scrap from '../src/assets/images/scrap.webp'
 import survey from '../src/assets/images/istockphoto-1208383663-612x612.jpg'
-
+import myimg1 from '../src/assets/images/myimg1.jpg'
+import myimg2 from '../src/assets/images/myimg2.jpg'
 const logotext = "Niraj Pandey";
 const meta = {
     title: "Niraj Pandey",
@@ -17,7 +18,8 @@ const introdata = {
         third: "I develop websites",
     },
     description: "Full-stack software engineer specializing in the MERN stack (React.js, Node.js, MySQL) with hands-on experience in Azure cloud, RDP cloud services, and CI/CD pipelines. Passionate about building scalable and efficient web applications.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: myimg2,
 };
 
 const dataabout = {
