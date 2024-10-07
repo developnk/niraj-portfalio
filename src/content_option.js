@@ -1,3 +1,8 @@
+import zamplia from '../src/assets/images/zamplia-social.jpg'
+import blog from '../src/assets/images/icashiq.webp'
+import scrap from '../src/assets/images/scrap.webp'
+import survey from '../src/assets/images/istockphoto-1208383663-612x612.jpg'
+
 const logotext = "Niraj Pandey";
 const meta = {
     title: "Niraj Pandey",
@@ -30,11 +35,6 @@ const worktimeline = [
         where: "Trayistats AI transformation pvt ltd ",
         date: "Jan - 2023 to Aug - 2024",
     },
-    // {
-    //     jobtitle: "Designer of week",
-    //     where: "ALquds",
-    //     date: "2019",
-    // },
 ];
 
 const skills = [
@@ -89,58 +89,27 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: zamplia,
+        description: "Zamplia is a market research platform that provides surveys. My role and responsibility involve implementing new enhancement tools using React.js, Node.js, MySQL, and Azure.",
+        link: "https://exchange.zamplia.com/",
+    },
+    {
+        img: blog,
+        description: "iCashIQ is a blog website where the admin uploads blogs related to market research and survey links.",
+        link: "https://icashiq.com/",
+    },
+    {
+        img: scrap,
+        description: "Kabadijee is a scrap management website that connects vendors and admins. The platform is used for buying and selling scrap materials.",
+        link: "https://kabadijee.com/",
+    },
+    {
+        img: survey,
+        description: "Zamplia Surveys is a platform where users can participate in surveys.",
+        link: "https://zampliasurveys.com/",
     },
     // {
-    //     img: "https://picsum.photos/400/800/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/600/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
     //     img: "https://picsum.photos/400/300/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/700/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-
-    // {
-    //     img: "https://picsum.photos/400/600/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/300/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/550/?grayscale",
-    //     description: "The wisdom of life consists in the elimination of non-essentials.",
-    //     link: "#",
-    // },
-    // {
-    //     img: "https://picsum.photos/400/?grayscale",
     //     description: "The wisdom of life consists in the elimination of non-essentials.",
     //     link: "#",
     // },
@@ -155,9 +124,9 @@ const contactConfig = {
     YOUR_EMAIL: "engg.niraj7499@gmail.com",
     YOUR_FONE: "+91 7499294207",
     description: "If you have any questions or want to discuss a project, feel free to get in touch! I'm always open to exploring new opportunities and collaborations.",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    // YOUR_SERVICE_ID: "service_6om6upu",
+    // YOUR_TEMPLATE_ID: "template_id",
+    // YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
