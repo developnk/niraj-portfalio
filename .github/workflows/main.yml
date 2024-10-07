@@ -49,8 +49,8 @@ jobs:
               uses: appleboy/scp-action@master
               with:
                   host: ${{ secrets.SANDBOX_SERVER_HOST }}
-                  username: ${{ vars.SANDBOX_USER_92 }}
-                  key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
+                  username: ${{ secrets.SANDBOX_USER }}
+                  password: ${{ secrets.SANDBOX_PASSWORD }}  # Use password here instead of key
                   source: '.'
                   target: /var/www/CareerGeniusAI/${{ github.run_id }}
                   port: 22  # Specify the port if not default
@@ -59,8 +59,8 @@ jobs:
               uses: appleboy/ssh-action@v1.0.0
               with:
                   host: ${{ secrets.SANDBOX_SERVER_HOST }}
-                  username: ${{ vars.SANDBOX_USER_92 }}
-                  key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
+                  username: ${{ secrets.SANDBOX_USER }}
+                  password: ${{ secrets.SANDBOX_PASSWORD }}  # Use password here instead of key
                   script: |
                       echo ${{ github.run_number }} 
                       mkdir -p /var/www/CareerGeniusAI/${{ github.run_number }}.${{ github.run_attempt }}
