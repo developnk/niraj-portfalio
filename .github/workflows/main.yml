@@ -22,6 +22,7 @@ jobs:
               run: |
                   npm install
                   CI="" npm run build
+
             - name: List files in build directory
               run: ls -al build
 
@@ -49,21 +50,21 @@ jobs:
               with:
                   host: ${{ vars.SANDBOX_SERVER_HOST_92 }}
                   username: ${{ vars.SANDBOX_USER_92 }}
-                  password: ${{ vars.SANDBOX_PWD_92 }}
+                  key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
                   source: '.'
-                  target: /var/www/CareerGeniusAI/nirajportfalio/${{ github.run_id }}
+                  target: /var/www/CareerGeniusAI/${{ github.run_id }}
+                  port: 22  # Specify the port if not default
 
             - name: Run Scripts on server
               uses: appleboy/ssh-action@v1.0.0
               with:
                   host: ${{ vars.SANDBOX_SERVER_HOST_92 }}
                   username: ${{ vars.SANDBOX_USER_92 }}
-                  password: ${{ vars.SANDBOX_PWD_92 }}
+                  key: ${{ secrets.SSH_PRIVATE }}  # Use SSH key here
                   script: |
                       echo ${{ github.run_number }} 
-                      mkdir -p /var/www/CareerGeniusAI/nirajportfalio/${{ github.run_number }}.${{ github.run_attempt }}
-                      mv -f /var/www/CareerGeniusAI/nirajportfalio/html/. /var/www/CareerGeniusAI/nirajportfalio/${{ github.run_number }}.${{ github.run_attempt }}/
-                      cp -rf /var/www/CareerGeniusAI/nirajportfalio/${{ github.run_id }}/. /var/www/CareerGeniusAI/nirajportfalio/html/
+                      mkdir -p /var/www/CareerGeniusAI/${{ github.run_number }}.${{ github.run_attempt }}
+                      mv -f /var/www/CareerGeniusAI/nirajportfalio/. /var/www/CareerGeniusAI/${{ github.run_number }}.${{ github.run_attempt }}/
+                      cp -rf /var/www/CareerGeniusAI/${{ github.run_id }}/. /var/www/CareerGeniusAI/nirajportfalio/
                       sudo service apache2 restart
-                      rm -r /var/www/CareerGeniusAI/nirajportfalio/${{ github.run_id }}
-            
+                      rm -r /var/www/CareerGeniusAI/${{ github.run_id }}
