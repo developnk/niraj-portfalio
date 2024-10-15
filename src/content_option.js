@@ -19,7 +19,7 @@ const introdata = {
     },
     description: "Full-stack software engineer specializing in the MERN stack (React.js, Node.js, MySQL) with hands-on experience in Azure cloud, RDP cloud services, and CI/CD pipelines. Passionate about building scalable and efficient web applications.",
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
-    your_img_url: myimg2,
+    your_img_url: myimg1,
 };
 
 const dataabout = {
