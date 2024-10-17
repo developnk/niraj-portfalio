@@ -2,24 +2,32 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext ,socialprofils ,logo_img_url} from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  // const navigate = useNavigate();
 
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
 
+ 
+  // const goToLogin = () => {
+  //   navigate('/LoginForm'); // Programmatically navigate to login
+  // };
+
+
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
+          <img src={logo_img_url} alt="Logo" className="w-32 h-auto max-h-14" />
           </Link>
+          {/* <div className="navbar-brand nav_ac" onClick={goToLogin}> Login </div> */}
           <div className="d-flex align-items-center">
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -27,6 +35,7 @@ const Headermain = () => {
           </button>
           
           </div>
+          
         </div>
 
         <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
@@ -38,7 +47,7 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>

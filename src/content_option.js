@@ -4,7 +4,10 @@ import scrap from '../src/assets/images/scrap.webp'
 import survey from '../src/assets/images/istockphoto-1208383663-612x612.jpg'
 import myimg1 from '../src/assets/images/myimg1.jpg'
 import myimg2 from '../src/assets/images/myimg2.jpg'
-const logotext = "Niraj Pandey";
+import logo1 from  '../src/assets/images/logo1.png'
+import logo2 from '../src/assets/images/logo2.png'
+const logotext = "Niraj";
+const logo_img_url = logo2
 const meta = {
     title: "Niraj Pandey",
     description: "I’m Niraj Pandey Software engineer_ Full stack devloper,currently working in Noida",
@@ -126,9 +129,9 @@ const contactConfig = {
     YOUR_EMAIL: "engg.niraj7499@gmail.com",
     YOUR_FONE: "+91 7499294207",
     description: "If you have any questions or want to discuss a project, feel free to get in touch! I'm always open to exploring new opportunities and collaborations.",
-    // YOUR_SERVICE_ID: "service_6om6upu",
-    // YOUR_TEMPLATE_ID: "template_id",
-    // YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_lu0ipw8",
+    YOUR_TEMPLATE_ID: "template_wrchgiw",
+    YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
@@ -148,4 +151,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    logo_img_url,
 };
