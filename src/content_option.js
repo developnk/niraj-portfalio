@@ -6,8 +6,9 @@ import myimg1 from '../src/assets/images/myimg1.jpg'
 import myimg2 from '../src/assets/images/myimg2.jpg'
 import logo1 from  '../src/assets/images/logo1.png'
 import logo2 from '../src/assets/images/logo2.png'
+import niraj from '../src/assets/images/Niraj.png'
 const logotext = "Niraj";
-const logo_img_url = logo2
+// const logo_img_url = logo2
 const meta = {
     title: "Niraj Pandey",
     description: "I’m Niraj Pandey Software engineer_ Full stack devloper,currently working in Noida",
@@ -22,7 +23,7 @@ const introdata = {
     },
     description: "Full-stack software engineer specializing in the MERN stack (React.js, Node.js, MySQL) with hands-on experience in Azure cloud, RDP cloud services, and CI/CD pipelines. Passionate about building scalable and efficient web applications.",
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
-    your_img_url: myimg1,
+    your_img_url: niraj,
 };
 
 const dataabout = {
@@ -151,5 +152,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    logo_img_url,
+    // logo_img_url,
 };

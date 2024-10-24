@@ -25,7 +25,8 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-          <img src={logo_img_url} alt="Logo" className="w-32 h-auto max-h-14" />
+          {/* <img src={logo_img_url} alt="Logo" className="w-28 h-auto max-h-12" /> */}
+          {logotext}
           </Link>
           {/* <div className="navbar-brand nav_ac" onClick={goToLogin}> Login </div> */}
           <div className="d-flex align-items-center">
