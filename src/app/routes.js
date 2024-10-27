@@ -8,6 +8,7 @@ import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import DownloadCV from "../pages/downlodeCV";
+// import LoginForm from "../loginForm/index"
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -26,6 +27,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/DownloadCV" element={<DownloadCV />} />
+        {/* <Route path="/LoginForm" element={<LoginForm />} /> */}
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

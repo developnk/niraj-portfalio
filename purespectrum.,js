@@ -1,0 +1,1510 @@
+
+   const data = {
+        
+        "localizations" =  [
+            {
+                "localization": "fr_FR",
+                "text": "L'âge et le sexe de mon enfant sont %%232%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Boy up to 1 month old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Girl up to 1 month old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Boy 2 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Girl 2 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Boy 3 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "Girl 3 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 117,
+                        "text": "Boy 4 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 118,
+                        "text": "Girl 4 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 119,
+                        "text": "Boy 5 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 120,
+                        "text": "Girl 5 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 121,
+                        "text": "Boy 6 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 122,
+                        "text": "Girl 6 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 123,
+                        "text": "Boy 7 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 124,
+                        "text": "Girl 7 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 125,
+                        "text": "Boy 8 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 126,
+                        "text": "Girl 8 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 127,
+                        "text": "Boy 9 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 128,
+                        "text": "Girl 9 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 129,
+                        "text": "Boy 10 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 130,
+                        "text": "Girl 10 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 131,
+                        "text": "Boy 11 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 132,
+                        "text": "Girl 11 months old"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 133,
+                        "text": "Boy Age 1"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 134,
+                        "text": "Girl Age 1"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 135,
+                        "text": "Boy Age 2"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 136,
+                        "text": "Girl Age 2"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 137,
+                        "text": "Boy Age 3"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 138,
+                        "text": "Girl Age 3"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 139,
+                        "text": "Boy Age 4"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 140,
+                        "text": "Girl Age 4"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 141,
+                        "text": "Boy Age 5"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 142,
+                        "text": "Girl Age 5"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 143,
+                        "text": "Boy Age 6"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 144,
+                        "text": "Girl Age 6"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 145,
+                        "text": "Boy Age 7"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 146,
+                        "text": "Girl Age 7"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 147,
+                        "text": "Boy Age 8"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 148,
+                        "text": "Girl Age 8"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 149,
+                        "text": "Boy Age 9"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 150,
+                        "text": "Girl Age 9"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 151,
+                        "text": "Boy Age 10"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 152,
+                        "text": "Girl Age 10"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 153,
+                        "text": "Boy Age 11"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 154,
+                        "text": "Girl Age 11"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 155,
+                        "text": "Boy Age 12"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 156,
+                        "text": "Girl Age 12"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 157,
+                        "text": "Boy Teen 13"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 158,
+                        "text": "Girl Teen 13"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 159,
+                        "text": "Boy Teen 14"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 160,
+                        "text": "Girl Teen 14"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 161,
+                        "text": "Boy Teen 15"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 162,
+                        "text": "Girl Teen 15"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 163,
+                        "text": "Boy Teen 16"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 164,
+                        "text": "Girl Teen 16"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 165,
+                        "text": "Boy Teen 17"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 166,
+                        "text": "Girl Teen 17"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 167,
+                        "text": "I have no children 17 or younger living in my household"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 211,
+        "buyer_attribute_id": "",
+        "desc": "Gender",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Je suis un(e) %%211%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Male"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Female"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Prefer not to say"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 213,
+        "buyer_attribute_id": "",
+        "desc": "Income",
+        "category": [],
+        "type": 5,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Le revenu annuel de mon ménage est d’environ €%%213%%",
+                "answers": [],
+                "format": {
+                    "min": 0,
+                    "max": 999999,
+                    "regex": "/^([0-9]{1,6})$/i"
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 218,
+        "buyer_attribute_id": "",
+        "desc": "Children",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "J'ai %%218%% enfant(s)",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "No Children"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Have Children"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "2"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "3"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "4"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "5+"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 229,
+        "buyer_attribute_id": "",
+        "desc": "Postcodes",
+        "category": [],
+        "type": 5,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Mon code postal est %%229%% ",
+                "answers": [],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": "/^[0-9]{4,5}$/i"
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 212,
+        "buyer_attribute_id": "",
+        "desc": "Age",
+        "category": [],
+        "type": 5,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Date de naissance %%234%% %%235%%",
+                "answers": [],
+                "format": {
+                    "min": 13,
+                    "max": 99,
+                    "regex": "/^(1[3-9]|([2-9][0-9]))$/i"
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 217,
+        "buyer_attribute_id": "",
+        "desc": "Relationship",
+        "category": [
+            {
+                "id": 366,
+                "label": "Household"
+            }
+        ],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "je suis %%217%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Single"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Engaged"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Living with a Partner"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Married"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Divorced"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "Widowed"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 215,
+        "buyer_attribute_id": "",
+        "desc": "Employment",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Je suis employé(e) %%215%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Full-time"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Part-time"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Retired"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Student"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Unemployed"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 216,
+        "buyer_attribute_id": "",
+        "desc": "Education",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Mon plus haut niveau d'éducation est %%216%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Some High School"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "High School Graduate"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Some College"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Bachelor's Degree"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Master's Degree"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "Doctorate Degree"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 219,
+        "buyer_attribute_id": "",
+        "desc": "Device",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Dispositif %%219%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Desktop"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Mobile"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Tablet"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 270,
+        "buyer_attribute_id": "",
+        "desc": "Region 1",
+        "category": [
+            {
+                "id": 632,
+                "label": "Region"
+            }
+        ],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Région 1 %%270%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Auvergne-Rhône-Alpes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Bourgogne-Franche-Comté"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Bretagne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Centre-Val de Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Corse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "Grand Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 117,
+                        "text": "Hauts-de-France"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 118,
+                        "text": "Île-de-France"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 119,
+                        "text": "Normandie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 120,
+                        "text": "Nouvelle-Aquitaine"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 121,
+                        "text": "Occitanie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 122,
+                        "text": "Pays de la Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 123,
+                        "text": "Provence-Alpes-Côte d'Azur"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 289,
+        "buyer_attribute_id": "",
+        "desc": "Region 2",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Etat %%289%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 111,
+                        "text": "Rhône-Alpes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 112,
+                        "text": "Auvergne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 113,
+                        "text": "Bourgogne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 114,
+                        "text": "Franche-Comté"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 115,
+                        "text": "Bretagne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 116,
+                        "text": "Centre-Val de Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 117,
+                        "text": "Corse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 118,
+                        "text": "Champagne-Ardenne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 119,
+                        "text": "Alsace"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 120,
+                        "text": "Lorraine"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 121,
+                        "text": "Picardie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 122,
+                        "text": "Nord-Pas-de-Calais"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 123,
+                        "text": "Île-de-France"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 124,
+                        "text": "Basse-Normandie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 125,
+                        "text": "Haute-Normandie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 126,
+                        "text": "Poitou-Charentes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 127,
+                        "text": "Limousin"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 128,
+                        "text": "Aquitaine"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 129,
+                        "text": "Midi-Pyrénées"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 130,
+                        "text": "Languedoc-Roussillon"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 131,
+                        "text": "Pays de la Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 132,
+                        "text": "Provence-Alpes-Côte d’Azur"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 326,
+        "buyer_attribute_id": "",
+        "desc": "UDA 5",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "UDA 5 %%326%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 1,
+                        "text": "Sud Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 2,
+                        "text": "Nord Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 3,
+                        "text": "Sud Ouest"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 4,
+                        "text": "Nord Ouest"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 5,
+                        "text": "Île de France"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 327,
+        "buyer_attribute_id": "",
+        "desc": "UDA 9",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "UDA 9 %%327%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 1,
+                        "text": "Centre-Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 2,
+                        "text": "Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 3,
+                        "text": "BP-Est"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 4,
+                        "text": "Méditerranée"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 5,
+                        "text": "Sud-Ouest"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 6,
+                        "text": "BP-Ouest"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 7,
+                        "text": "Ouest"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 8,
+                        "text": "Nord"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 9,
+                        "text": "Île-de-France"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 328,
+        "buyer_attribute_id": "",
+        "desc": "Department",
+        "category": [],
+        "type": 1,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Department %%328%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 1,
+                        "text": "01 - Ain"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 2,
+                        "text": "02 - Aisne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 3,
+                        "text": "03 - Allier"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 4,
+                        "text": "04 - Alpes-de-Haute-Provence"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 5,
+                        "text": "05 - Hautes-Alpes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 6,
+                        "text": "06 - Alpes-Maritimes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 7,
+                        "text": "07 - Ardèche"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 8,
+                        "text": "08 - Ardennes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 9,
+                        "text": "09 - Ariège"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 10,
+                        "text": "10 - Aube"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 11,
+                        "text": "11 - Aude"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 12,
+                        "text": "12 - Aveyron"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 13,
+                        "text": "13 - Bouches-du-Rhône"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 14,
+                        "text": "14 - Calvados"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 15,
+                        "text": "15 - Cantal"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 16,
+                        "text": "16 - Charente"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 17,
+                        "text": "17 - Charente-Maritime"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 18,
+                        "text": "18 - Cher"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 19,
+                        "text": "19 - Corrèze"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 20,
+                        "text": "2A - Corse-du-Sud"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 21,
+                        "text": "2B - Haute-Corse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 22,
+                        "text": "21 - Côte-d'Or"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 23,
+                        "text": "22 - Côtes d'Armor"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 24,
+                        "text": "23 - Creuse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 25,
+                        "text": "24 - Dordogne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 26,
+                        "text": "25 - Doubs"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 27,
+                        "text": "26 - Drôme"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 28,
+                        "text": "27 - Eure"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 29,
+                        "text": "28 - Eure-et-Loir"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 30,
+                        "text": "29 - Finistère"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 31,
+                        "text": "30 - Gars"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 32,
+                        "text": "31 - Haute-Garonne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 33,
+                        "text": "32 - Gers"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 34,
+                        "text": "33 - Gironde"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 35,
+                        "text": "34 - Hérault"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 36,
+                        "text": "35 - Ille-et-Vilaine"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 37,
+                        "text": "36 - Indre"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 38,
+                        "text": "37 - Indre-et-Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 39,
+                        "text": "38 - Isère"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 40,
+                        "text": "39 - Jura"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 41,
+                        "text": "40 - Landes"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 42,
+                        "text": "41 - Loir-et-Cher"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 43,
+                        "text": "42 - Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 44,
+                        "text": "43 - Haute-Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 45,
+                        "text": "44 - Loire-Atlantique"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 46,
+                        "text": "45 - Loiret"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 47,
+                        "text": "46 - Lot"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 48,
+                        "text": "47 - Lot-et-Garonne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 49,
+                        "text": "48 - Lozère"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 50,
+                        "text": "49 - Maine-et-Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 51,
+                        "text": "50 - Manche"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 52,
+                        "text": "51 - Marne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 53,
+                        "text": "52 - Haute-Marne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 54,
+                        "text": "53 - Mayenne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 56,
+                        "text": "54 - Meurthe-et-Moselle"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 57,
+                        "text": "55 - Meuse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 58,
+                        "text": "56 - Morbihan"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 59,
+                        "text": "57 - Moselle"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 60,
+                        "text": "58 - Nièvre"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 61,
+                        "text": "59 - Nord"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 62,
+                        "text": "60 - Oise"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 63,
+                        "text": "61 - Orne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 64,
+                        "text": "62 - Pas-de-Calais"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 65,
+                        "text": "63 - Puy-de-Dôme"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 66,
+                        "text": "64 - Pyrénées-Atlantiques"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 67,
+                        "text": "65 - Hautes-Pyrénées "
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 68,
+                        "text": "66 - Pyrénées-Orientales"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 69,
+                        "text": "67 - Bas-Rhin"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 70,
+                        "text": "68 - Haut-Rhin"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 71,
+                        "text": "69 - Rhône"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 72,
+                        "text": "70 - Haute-Saône"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 73,
+                        "text": "71 - Saône-et-Loire"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 74,
+                        "text": "72 - Sarthe"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 75,
+                        "text": "73 - Savoie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 76,
+                        "text": "74 - Haute-Savoie"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 77,
+                        "text": "75 - Paris"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 78,
+                        "text": "76 - Seine-Maritime"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 79,
+                        "text": "77 - Seine-et-Marne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 80,
+                        "text": "78 - Yvelines"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 81,
+                        "text": "79 - Deux-Sèvres"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 82,
+                        "text": "80 - Somme"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 83,
+                        "text": "81 - Tarn"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 84,
+                        "text": "82 - Tarn-et-Garonne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 85,
+                        "text": "83 - Var"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 86,
+                        "text": "84 - Vaucluse"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 87,
+                        "text": "85 - Vendée"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 88,
+                        "text": "86 - Vienne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 89,
+                        "text": "87 - Haute-Vienne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 90,
+                        "text": "88 - Vosges"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 91,
+                        "text": "89 - Yonne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 92,
+                        "text": "90 - Territoire de Belfort"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 93,
+                        "text": "91 - Essonne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 94,
+                        "text": "92 - Hauts-de-Seine"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 95,
+                        "text": "93 - Seine-Saint-Denis"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 96,
+                        "text": "94 - Val-de-Marne"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 97,
+                        "text": "95 - Val-d'Oise"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    },
+    {
+        "ps_qualification_code": 99994,
+        "buyer_attribute_id": "",
+        "desc": "Country Language",
+        "category": [
+            "Language"
+        ],
+        "type": 3,
+        "class": 1,
+        "localizations": [
+            {
+                "localization": "fr_FR",
+                "text": "Je peux participer au sondage %%99994%%",
+                "answers": [
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 1,
+                        "text": "English"
+                    },
+                    {
+                        "buyer_answer_id": "",
+                        "ps_cond_code": 999,
+                        "text": "Other"
+                    }
+                ],
+                "format": {
+                    "min": null,
+                    "max": null,
+                    "regex": ""
+                }
+            }
+        ]
+    }
+
+const ps_qualification_code = data.abc.length;
+
+console.log(`Number of qualificationId entries: ${ps_qualification_code}`);

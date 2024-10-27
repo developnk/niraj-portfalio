@@ -7,38 +7,36 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 
-// Top to button navigation
-
-function _ScrollToTop(props) {
+// Scroll function to handle left-to-right or right-to-left scrolling
+function _ScrollToRight({ scrollDirection, children }) {
   const { pathname } = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return props.children;
+    if (scrollDirection === "left-to-right") {
+      window.scrollTo({
+        top: 0,
+        left: 0, // Start from the left
+        behavior: 'smooth', // Smooth scrolling effect
+      });
+    } else if (scrollDirection === "right-to-left") {
+      window.scrollTo({
+        top: 0,
+        left: document.body.scrollWidth, // Start from the right
+        behavior: 'smooth', // Smooth scrolling effect
+      });
+    }
+  }, [pathname, scrollDirection]);
+
+  return children;
 }
-const ScrollToTop = withRouter(_ScrollToTop);
 
-// left to right navigation
-// function _ScrollToRight(props) {
-//   const { pathname } = useLocation();
-
-//   useEffect(() => {
-//     window.scrollTo({
-//       top: 0, // Ensure it scrolls to the top vertically
-//       left: 0, // Start the scroll from the left
-//       behavior: 'smooth' // Use smooth scrolling for a nice effect
-//     });
-//   }, [pathname]);
-
-//   return props.children;
-// }
-
-// const ScrollToRight = withRouter(_ScrollToRight);
+const ScrollToRight = withRouter(_ScrollToRight);
 
 export default function App() {
+  // You can pass "left-to-right" or "right-to-left" for horizontal scrolling direction
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
@@ -51,10 +49,11 @@ export default function App() {
           outerScale={5}
         />
       </div>
-      <ScrollToTop>
+      {/* Toggle scrollDirection between "left-to-right" and "right-to-left" */}
+      <ScrollToRight scrollDirection="left-to-right">
         <Headermain />
         <AppRoutes />
-      </ScrollToTop>
+      </ScrollToRight>
     </Router>
   );
 }
