@@ -52,7 +52,7 @@ jobs:
                   username: ${{ secrets.SANDBOX_USER }}
                   password: ${{ secrets.SANDBOX_PASSWORD }}  # Use password here instead of key
                   source: '.'
-                  target: /var/www/CareerGeniusAI/${{ github.run_id }}
+                  target: /var/www/nirajresume/${{ github.run_id }}
                   port: 22  # Specify the port if not default
 
             - name: Run Scripts on server
@@ -63,8 +63,8 @@ jobs:
                   password: ${{ secrets.SANDBOX_PASSWORD }}  # Use password here instead of key
                   script: |
                       echo ${{ github.run_number }} 
-                      mkdir -p /var/www/CareerGeniusAI/${{ github.run_number }}.${{ github.run_attempt }}
-                      mv -f /var/www/CareerGeniusAI/nirajportfalio/. /var/www/CareerGeniusAI/${{ github.run_number }}.${{ github.run_attempt }}/
-                      cp -rf /var/www/CareerGeniusAI/${{ github.run_id }}/. /var/www/CareerGeniusAI/nirajportfalio/
+                      mkdir -p /var/www/nirajresume/${{ github.run_number }}.${{ github.run_attempt }}
+                      mv -f /var/www/nirajresume/html/. /var/www/nirajresume/${{ github.run_number }}.${{ github.run_attempt }}/
+                      cp -rf /var/www/nirajresume/${{ github.run_id }}/. /var/www/nirajresume/html/
                       sudo service apache2 restart
-                      rm -r /var/www/CareerGeniusAI/${{ github.run_id }}
+                      rm -r /var/www/nirajresume/${{ github.run_id }}
