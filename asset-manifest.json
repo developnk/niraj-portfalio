@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0a588da.css",
+    "main.js": "/static/js/main.f2218fe7.js",
+    "static/media/Niraj.png": "/static/media/Niraj.e70d798fa8e8f5349030.png",
+    "static/media/myimg2.jpg": "/static/media/myimg2.cd198dd02401e6f3ac04.jpg",
+    "static/media/logo2.png": "/static/media/logo2.05a28c75694f163b1a85.png",
+    "static/media/logo1.png": "/static/media/logo1.1f8bdfaf6f72eb7e380a.png",
+    "static/media/myimg1.jpg": "/static/media/myimg1.119be9394564d3edd7ba.jpg",
+    "static/media/zamplia-social.jpg": "/static/media/zamplia-social.814e29b4b9864f388ecb.jpg",
+    "static/media/istockphoto-1208383663-612x612.jpg": "/static/media/istockphoto-1208383663-612x612.ebc509c35eb647bc0dbe.jpg",
+    "static/media/scrap.webp": "/static/media/scrap.274bb645ca9b3cfcedd4.webp",
+    "static/media/icashiq.webp": "/static/media/icashiq.48cb58d4dfb3c9be279e.webp",
+    "index.html": "/index.html",
+    "main.c0a588da.css.map": "/static/css/main.c0a588da.css.map",
+    "main.f2218fe7.js.map": "/static/js/main.f2218fe7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0a588da.css",
+    "static/js/main.f2218fe7.js"
+  ]
+}
