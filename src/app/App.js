@@ -39,8 +39,23 @@ const ScrollToTop = withRouter(_ScrollToTop);
 // const ScrollToRight = withRouter(_ScrollToRight);
 
 export default function App() {
+  // Derive a safe basename for Router:
+  // - during development serve at root (`/`)
+  // - in production derive path from PUBLIC_URL (supports full URL or a path)
+  const getBasename = () => {
+    if (process.env.NODE_ENV === "development") return "/";
+    const pub = process.env.PUBLIC_URL || "/";
+    try {
+      // If PUBLIC_URL is a full URL, extract its pathname
+      if (pub.startsWith("http")) return new URL(pub).pathname.replace(/\/$/, "") || "/";
+      return pub;
+    } catch (e) {
+      return "/";
+    }
+  };
+
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={getBasename()}>
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
