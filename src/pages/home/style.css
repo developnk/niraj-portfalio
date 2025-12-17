@@ -232,3 +232,29 @@ section {
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
 }
+
+/* Visit widget shown when a visitor arrives via a search for developnk.com */
+.visit-widget {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0,0,0,0.03);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+.visit-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+.visit-count {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 8px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+}

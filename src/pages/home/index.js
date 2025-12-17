@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -6,6 +6,54 @@ import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+  const [count, setCount] = useState(null);
+  const [showVisit, setShowVisit] = useState(true);
+
+  useEffect(() => {
+    const ref = document.referrer;
+    function isSearchForDevelopnk() {
+      if (!ref) return false;
+      try {
+        const u = new URL(ref);
+        const params = new URLSearchParams(u.search);
+        const q = params.get('q') || params.get('query') || '';
+        if (q && (q.includes('developnk.com') || decodeURIComponent(q).includes('developnk.com'))) return true;
+        if (ref.includes('developnk.com')) return true;
+      } catch (e) {
+        return false;
+      }
+      return false;
+    }
+
+    if (isSearchForDevelopnk()) {
+      setShowVisit(true);
+      const key = 'https_developnk_com';
+      const namespace = 'developnk';
+      const flagKey = 'visit_hit_' + key;
+      const hitUrl = `https://api.countapi.xyz/hit/${namespace}/${key}`;
+      const getUrl = `https://api.countapi.xyz/get/${namespace}/${key}`;
+
+      if (!sessionStorage.getItem(flagKey)) {
+        fetch(hitUrl)
+          .then((res) => res.json())
+          .then((data) => {
+            if (data && typeof data.value !== 'undefined') setCount(data.value);
+            sessionStorage.setItem(flagKey, '1');
+          })
+          .catch(() => {
+            fetch(getUrl).then((r) => r.json()).then((d) => { if (d && typeof d.value !== 'undefined') setCount(d.value); });
+          });
+      } else {
+        fetch(getUrl)
+          .then((res) => res.json())
+          .then((data) => {
+            if (data && typeof data.value !== 'undefined') setCount(data.value);
+          })
+          .catch(() => setCount(null));
+      }
+    }
+  }, []);
+
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -61,6 +109,12 @@ export const Home = () => {
                     Download CV
                   </div>
                 </Link>
+                {showVisit && (
+                  <div className="visit-widget" title="Visitors from searches for https://developnk.com/">
+                    <h4 className="visit-title">Visit</h4>
+                    <div className="visit-count">{count !== null ? count : "..."}</div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
