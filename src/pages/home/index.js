@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [count, setCount] = useState(null);
-  const [showVisit, setShowVisit] = useState(true);
+  const [showVisit, setShowVisit] = useState(false);
 
   useEffect(() => {
     const ref = document.referrer;
@@ -27,9 +27,9 @@ export const Home = () => {
 
     if (isSearchForDevelopnk()) {
       setShowVisit(true);
-      const key = 'https_developnk_com';
-      const namespace = 'developnk';
-      const flagKey = 'visit_hit_' + key;
+      const namespace = 'developnk.com';
+      const key = 'visits';
+      const flagKey = 'visit_hit_developnk_visits';
       const hitUrl = `https://api.countapi.xyz/hit/${namespace}/${key}`;
       const getUrl = `https://api.countapi.xyz/get/${namespace}/${key}`;
 
@@ -41,7 +41,10 @@ export const Home = () => {
             sessionStorage.setItem(flagKey, '1');
           })
           .catch(() => {
-            fetch(getUrl).then((r) => r.json()).then((d) => { if (d && typeof d.value !== 'undefined') setCount(d.value); });
+            fetch(getUrl)
+              .then((r) => r.json())
+              .then((d) => { if (d && typeof d.value !== 'undefined') setCount(d.value); })
+              .catch(() => setCount(null));
           });
       } else {
         fetch(getUrl)

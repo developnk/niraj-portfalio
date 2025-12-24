@@ -34,12 +34,27 @@ const worktimeline = [
     {
         jobtitle: "Software Engineer",
         where: "Pando india software consultant",
-        date: "May-2022  to Present",
+        date: "May-2022  to  mar-2025",
     },
     {
         jobtitle: "Devops Engineer",
         where: "Trayistats AI transformation pvt ltd ",
         date: "Jan - 2023 to Aug - 2024",
+    },
+    {
+        jobtitle: "Junior React Developer",
+        where: "Catabatic Technology Pvt ltd ",
+        date: "mar - 2025 to july - 2025",
+    },
+    {
+        jobtitle: "React Developer",
+        where: "Dharmsanghar.ai(Freelancer)",
+        date: "july - 2025 to Dec-2025",
+    },
+     {
+        jobtitle: "Software Developer",
+        where: "Programming.com",
+        date: "Dec - 2025 to Present",
     },
 ];
 
