@@ -1,0 +1,6 @@
+.dashboard-page{padding:40px 16px}
+.dash-container{max-width:900px;margin:0 auto}
+.dash-card{background:#fff;border:1px solid #e5e7eb;padding:20px;border-radius:8px}
+.dash-actions{margin-top:12px}
+.btn-logout{padding:8px 12px;border-radius:6px;background:#ef4444;color:#fff;border:none}
+.muted{color:#6b7280}
