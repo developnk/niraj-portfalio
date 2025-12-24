@@ -28,7 +28,7 @@ const introdata = {
 
 const dataabout = {
     title: "About my self",
-    aboutme: "I am a passionate full-stack software engineer with expertise in the MERN stack (React.js, Node.js, MySQL) and experience in Azure cloud, RDP cloud services, and CI/CD pipelines. Over the years, I have developed a strong foundation in building scalable web applications, optimizing system performance, and working with cloud infrastructures. My focus is on delivering efficient and user-friendly solutions while continuously learning and staying updated with the latest technology trends.",
+    aboutme: "I am a passionate full-stack software engineer with expertise in the MERN stack and experience in Azure cloud, RDP cloud services, and CI/CD pipelines. Over the years, I have developed a strong foundation in building scalable web applications, optimizing system performance, and working with cloud infrastructures. My focus is on delivering efficient and user-friendly solutions while continuously learning and staying updated with the latest technology trends.",
 };
 const worktimeline = [
     {
@@ -106,6 +106,14 @@ const services = [
         title: "Devops Engineer",
         description: "Experienced in setting up CI/CD pipelines, automating workflows, and ensuring seamless deployment. I optimize cloud infrastructures, manage resources efficiently on Azure, and enhance the overall development process through continuous integration and deployment.",
     },
+     {
+        title: "junior React Developer",
+        description: "Proficient in building dynamic and responsive user interfaces using React.js. I create reusable components, manage state effectively, and ensure optimal performance to deliver engaging web applications that provide excellent user experiences.",
+    },
+    {
+        title: "Software Developer",
+        description: "Skilled in developing robust software solutions by leveraging modern technologies and best practices. I focus on writing clean, maintainable code and collaborating with cross-functional teams to deliver high-quality applications that meet client requirements.",
+    },
 ];
 
 const dataportfolio = [
@@ -143,7 +151,7 @@ const dataportfolio = [
 
 const contactConfig = {
     YOUR_EMAIL: "engg.niraj7499@gmail.com",
-    YOUR_FONE: "+91 7499294207",
+    YOUR_FONE: "+91 8287937893",
     description: "If you have any questions or want to discuss a project, feel free to get in touch! I'm always open to exploring new opportunities and collaborations.",
     YOUR_SERVICE_ID: "service_lu0ipw8",
     YOUR_TEMPLATE_ID: "template_wrchgiw",
