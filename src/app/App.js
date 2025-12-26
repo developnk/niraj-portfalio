@@ -56,16 +56,19 @@ export default function App() {
 
   return (
     <Router basename={getBasename()}>
-      <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div>
+      {/* Animated cursor can be enabled by setting REACT_APP_ENABLE_CURSOR=true in env */}
+      {process.env.REACT_APP_ENABLE_CURSOR === "true" && (
+        <div className="cursor__dot">
+          <AnimatedCursor
+            innerSize={15}
+            outerSize={15}
+            color="255, 255 ,255"
+            outerAlpha={0.4}
+            innerScale={0.7}
+            outerScale={5}
+          />
+        </div>
+      )}
       <ScrollToTop>
         <Headermain />
         <AppRoutes />

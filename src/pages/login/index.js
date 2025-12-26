@@ -16,8 +16,7 @@ export const Login = () => {
     setLoading(true);
     try {
       await apiLogin(email, password);
-      // on success redirect to dashboard
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     } catch (err) {
       setError(err.message || "Login failed");
     } finally {

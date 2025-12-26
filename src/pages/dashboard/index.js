@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 import { getAuthHeader, logout } from "../../utils/auth";
+import { getUser } from "../../utils/auth";
 
 export const Dashboard = () => {
   const navigate = useNavigate();
@@ -9,10 +10,18 @@ export const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const API_BASE = process.env.REACT_APP_API_URL || "";
+    const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
     async function fetchProfile() {
+      // If a user object was returned at login and persisted, use it to avoid an extra API call
+      const stored = getUser();
+      if (stored) {
+        setProfile(stored);
+        setLoading(false);
+        return;
+      }
       try {
-        const res = await fetch(`${API_BASE}/auth/me`, {
+        // Align with backend namespace used by login helper
+        const res = await fetch(`${API_BASE}/api/users/me`, {
           headers: { ...getAuthHeader(), "Content-Type": "application/json" },
         });
         if (!res.ok) {
