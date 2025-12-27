@@ -31,7 +31,7 @@ export const Home = () => {
     setShowVisit(true);
 
     const flagKey = "firebase_visit_hit";
-    const docRef = doc(db, "counter", "visitor count");
+    const docRef = doc(db, "counter", "developnk");
 
     const updateVisitor = async () => {
       try {
