@@ -4,6 +4,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import { doc, getDoc, updateDoc, setDoc, increment } from "firebase/firestore";
+import { db } from "../../firebase"; // adjust path if needed
 
 export const Home = () => {
   const [count, setCount] = useState(null);
@@ -11,51 +13,48 @@ export const Home = () => {
 
   useEffect(() => {
     const ref = document.referrer;
+
     function isSearchForDevelopnk() {
       if (!ref) return false;
       try {
         const u = new URL(ref);
         const params = new URLSearchParams(u.search);
-        const q = params.get('q') || params.get('query') || '';
-        if (q && (q.includes('developnk.com') || decodeURIComponent(q).includes('developnk.com'))) return true;
-        if (ref.includes('developnk.com')) return true;
-      } catch (e) {
+        const q = params.get("q") || "";
+        return q.includes("developnk.com") || ref.includes("developnk.com");
+      } catch {
         return false;
       }
-      return false;
     }
 
-    if (isSearchForDevelopnk()) {
-      setShowVisit(true);
-      const namespace = 'developnk.com';
-      const key = 'visits';
-      const flagKey = 'visit_hit_developnk_visits';
-      const hitUrl = `https://api.countapi.xyz/hit/${namespace}/${key}`;
-      const getUrl = `https://api.countapi.xyz/get/${namespace}/${key}`;
+    if (!isSearchForDevelopnk()) return;
 
-      if (!sessionStorage.getItem(flagKey)) {
-        fetch(hitUrl)
-          .then((res) => res.json())
-          .then((data) => {
-            if (data && typeof data.value !== 'undefined') setCount(data.value);
-            sessionStorage.setItem(flagKey, '1');
-          })
-          .catch(() => {
-            fetch(getUrl)
-              .then((r) => r.json())
-              .then((d) => { if (d && typeof d.value !== 'undefined') setCount(d.value); })
-              .catch(() => setCount(null));
-          });
-      } else {
-        fetch(getUrl)
-          .then((res) => res.json())
-          .then((data) => {
-            if (data && typeof data.value !== 'undefined') setCount(data.value);
-          })
-          .catch(() => setCount(null));
+    setShowVisit(true);
+
+    const flagKey = "firebase_visit_hit";
+    const docRef = doc(db, "visitors", "developnk");
+
+    const updateVisitor = async () => {
+      try {
+        if (!sessionStorage.getItem(flagKey)) {
+          await updateDoc(docRef, { count: increment(1) });
+          sessionStorage.setItem(flagKey, "1");
+        }
+
+        const snap = await getDoc(docRef);
+        if (snap.exists()) {
+          setCount(snap.data().count);
+        }
+      } catch (err) {
+        // If document doesn't exist yet
+        await setDoc(docRef, { count: 1 });
+        setCount(1);
+        sessionStorage.setItem(flagKey, "1");
       }
-    }
+    };
+
+    updateVisitor();
   }, []);
+
 
   return (
     <HelmetProvider>
@@ -118,6 +117,7 @@ export const Home = () => {
                     <div className="visit-count">{count !== null ? count : "..."}</div>
                   </div>
                 )}
+
               </div>
             </div>
           </div>
