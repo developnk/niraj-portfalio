@@ -9,7 +9,7 @@ import { db } from "../../firebase"; // adjust path if needed
 
 export const Home = () => {
   const [count, setCount] = useState(null);
-  const [showVisit, setShowVisit] = useState(false);
+  const [showVisit, setShowVisit] = useState(true);
 
   useEffect(() => {
     const ref = document.referrer;
@@ -31,7 +31,7 @@ export const Home = () => {
     setShowVisit(true);
 
     const flagKey = "firebase_visit_hit";
-    const docRef = doc(db, "visitors", "developnk");
+    const docRef = doc(db, "counter", "visitor count");
 
     const updateVisitor = async () => {
       try {
