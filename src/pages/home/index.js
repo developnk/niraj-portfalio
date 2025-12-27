@@ -11,49 +11,33 @@ export const Home = () => {
   const [count, setCount] = useState(null);
   const [showVisit, setShowVisit] = useState(true);
 
-  useEffect(() => {
-    const ref = document.referrer;
+useEffect(() => {
+  const flagKey = "firebase_visit_hit";
+  const docRef = doc(db, "counter", "developnk");
 
-    function isSearchForDevelopnk() {
-      if (!ref) return false;
-      try {
-        const u = new URL(ref);
-        const params = new URLSearchParams(u.search);
-        const q = params.get("q") || "";
-        return q.includes("developnk.com") || ref.includes("developnk.com");
-      } catch {
-        return false;
-      }
-    }
-
-    if (!isSearchForDevelopnk()) return;
-
-    setShowVisit(true);
-
-    const flagKey = "firebase_visit_hit";
-    const docRef = doc(db, "counter", "developnk");
-
-    const updateVisitor = async () => {
-      try {
-        if (!sessionStorage.getItem(flagKey)) {
-          await updateDoc(docRef, { count: increment(1) });
-          sessionStorage.setItem(flagKey, "1");
-        }
-
-        const snap = await getDoc(docRef);
-        if (snap.exists()) {
-          setCount(snap.data().count);
-        }
-      } catch (err) {
-        // If document doesn't exist yet
-        await setDoc(docRef, { count: 1 });
-        setCount(1);
+  const updateVisitor = async () => {
+    try {
+      if (!sessionStorage.getItem(flagKey)) {
+        await setDoc(
+          docRef,
+          { count: increment(1) },
+          { merge: true }
+        );
         sessionStorage.setItem(flagKey, "1");
       }
-    };
 
-    updateVisitor();
-  }, []);
+      const snap = await getDoc(docRef);
+      if (snap.exists()) {
+        setCount(snap.data().count);
+      }
+    } catch (error) {
+      console.error("Visitor counter error:", error);
+    }
+  };
+
+  updateVisitor();
+}, []);
+
 
 
   return (
