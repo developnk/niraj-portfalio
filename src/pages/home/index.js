@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import { doc, getDoc, updateDoc, setDoc, increment } from "firebase/firestore";
+import { doc, getDoc, updateDoc, setDoc, increment, collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase"; // adjust path if needed
 
 export const Home = () => {
@@ -18,11 +18,20 @@ useEffect(() => {
   const updateVisitor = async () => {
     try {
       if (!sessionStorage.getItem(flagKey)) {
-        await setDoc(
-          docRef,
-          { count: increment(1) },
-          { merge: true }
-        );
+        await setDoc(docRef, { count: increment(1) }, { merge: true });
+        // create a visit document for analytics (one per session)
+        try {
+          if (typeof window !== "undefined") {
+            await addDoc(collection(db, "visits"), {
+              path: window.location.href,
+              referrer: document.referrer || null,
+              userAgent: navigator.userAgent || null,
+              timestamp: serverTimestamp(),
+            });
+          }
+        } catch (visitErr) {
+          console.error("Failed to add visit document:", visitErr);
+        }
         sessionStorage.setItem(flagKey, "1");
       }
 
