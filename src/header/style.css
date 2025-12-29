@@ -1,16 +1,26 @@
 .site__header {
     top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: var(--bg-color);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .menu__button {
     color: var(--text-color);
+    margin: 0 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
 }
 
 .menu__button:focus,
 .menu__button:hover {
     color: var(--text-color);
+    background: var(--secondary-color);
     box-shadow: unset;
 }
 
@@ -22,8 +32,8 @@
 }
 
 .nav_ac {
-    padding: 5px 15px;
-    margin: 0;
+    padding: 8px 20px;
+    margin: 0 6px;
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
@@ -33,10 +43,13 @@
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+    border-radius: 8px;
+    transition: background 0.2s;
 }
 
 .nav_ac:hover {
     color: var(--text-color-2);
+    background: var(--secondary-color);
 }
 
 .br-top,

@@ -2,13 +2,14 @@ section {
     flex: 1 0 auto;
     position: relative;
     width: 100%;
-    -webkit-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
+    padding: 32px 0;
+    margin-bottom: 32px;
 }
 
 .who_am_I {
     font-family: Cinzel;
+    margin-bottom: 24px;
 }
 
 .has-first-color {
@@ -17,7 +18,9 @@ section {
 
 .btn-portfolio {
     background: var(--primary-color);
-    border-radius: 0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 8px 0;
 }
 
 .btn-portfolio a {
@@ -33,32 +36,40 @@ section {
 .intro_sec {
     height: calc(100vh - 60px);
     min-height: 700px;
-    height: 100vh;
     margin-top: -60px;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 @media (max-width:991.98px) {
     .intro_sec {
         display: block;
         height: auto!important;
+        padding: 16px 0;
+        gap: 0;
     }
 }
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
     width: 50%;
+    padding: 0 16px;
 }
 
 @media (max-width:991.98px) {
     .intro_sec .text,
     .intro_sec .h_bg-image {
         width: 100%;
+        padding: 0;
     }
 }
 
 .intro_sec .intro {
-    max-width: 450px;
+    max-width: 480px;
     margin: 0 auto;
+    padding: 24px 0;
 }
 
 @media (max-width:991.98px) {
@@ -81,14 +92,15 @@ section {
 }
 
 .intro_sec .text h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 32px;
+    margin-bottom: 40px;
     font-weight: 700;
 }
 
 .intro_sec .text h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .intro_sec .h_bg-image {

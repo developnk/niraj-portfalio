@@ -54,7 +54,7 @@ export const Login = () => {
             {loading ? "Logging in..." : "Login"}
           </button>
 
-          <p className="login-hint">Make sure `REACT_APP_API_URL` is set for API calls.</p>
+          {/* <p className="login-hint">Make sure `REACT_APP_API_URL` is set for API calls.</p> */}
         </form>
       </div>
     </section>
