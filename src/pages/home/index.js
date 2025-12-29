@@ -28,6 +28,23 @@ useEffect(() => {
               userAgent: navigator.userAgent || null,
               timestamp: serverTimestamp(),
             });
+            // Hit external API when site is visited (one per session)
+            fetch('https://api.developnk.com/api/visit', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ key: 'value' }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              // Optionally handle response
+              // console.log('External API hit:', data);
+            })
+            .catch(err => {
+              // Optionally handle error
+              // console.error('External API error:', err);
+            });
           }
         } catch (visitErr) {
           console.error("Failed to add visit document:", visitErr);
