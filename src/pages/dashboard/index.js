@@ -105,8 +105,8 @@ const Dashboard = () => {
   const sidebar = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold text-blue-600">Dashboard</h2>
-        <p className="text-sm text-gray-500">Welcome back</p>
+        <h2 className="text-2xl font-bold text-blue-600">Niraj Pandey</h2>
+        <p className="text-sm text-black-500">Welcome back</p>
       </div>
 
       <nav className="space-y-1">
@@ -161,7 +161,7 @@ const Dashboard = () => {
             ["Services", services.length],
           ].map(([title, value], i) => (
             <div key={i} className="bg-white p-5 rounded-xl shadow">
-              <p className="text-sm text-gray-500">{title}</p>
+              <p className="text-sm text-black-500">{title}</p>
               <h3 className="text-2xl font-bold">{value}</h3>
             </div>
           ))}
@@ -203,7 +203,7 @@ const Dashboard = () => {
             <>
               {Object.entries(profileForm).map(([k, v]) => (
                 <div key={k} className="mb-3">
-                  <p className="text-sm text-gray-500 capitalize">{k}</p>
+                  <p className="text-sm text-black-500 capitalize">{k}</p>
                   <p className="font-medium">{v}</p>
                 </div>
               ))}
@@ -291,7 +291,7 @@ const Dashboard = () => {
           {worktimeline.map((e, i) => (
             <li key={i} className="bg-white p-5 rounded-xl shadow border-l-4 border-blue-600">
               <strong>{e.jobtitle}</strong>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-black-500">
                 {e.where} • {e.date}
               </p>
             </li>
