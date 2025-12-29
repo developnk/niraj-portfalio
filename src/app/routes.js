@@ -11,7 +11,7 @@ import DownloadCV from "../pages/downlodeCV";
 import Experience from "../pages/Experience";
 import { Certificate } from "../pages/certificate";
 import { Login } from "../pages/login";
-import { Dashboard } from "../pages/dashboard";
+import Dashboard from "../pages/dashboard";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
