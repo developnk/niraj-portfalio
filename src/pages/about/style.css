@@ -1,10 +1,13 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .table td,
 .table th {
     color: var(--text-color);
+    padding: 12px 16px;
 }
 
 .t_border {
@@ -12,18 +15,18 @@
 }
 
 .progress-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    margin: 15px 0 20px;
+    margin: 18px 0 22px;
     font-family: 'Raleway';
 }
 
 .progress {
-    height: 5px;
+    height: 6px;
     background: var(--secondary);
-    border-radius: 0;
+    border-radius: 3px;
     box-shadow: none;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     overflow: visible;
 }
 
@@ -37,37 +40,28 @@
 
 .progress .progress-value {
     position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
+    top: -32px;
+    right: 10px;
+    font-size: 18px;
     font-weight: bold;
     font-style: italic;
     color: var(--text-color);
 }
 
-@-webkit-keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
-@keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
 .section-title {
-    font-size: 45px;
+    font-size: 48px;
+    margin-bottom: 24px;
 }
 
 .service__title {
-    padding: 8px 0;
+    padding: 10px 0;
     border-bottom: solid 2px var(--secondary-color);
+    margin-bottom: 16px;
 }
 
 .service-section .service-category-title {
-    padding-bottom: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 
